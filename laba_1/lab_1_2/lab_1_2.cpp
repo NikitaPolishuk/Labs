@@ -1,4 +1,14 @@
-﻿
+﻿//2. Написать программу, которая преобразует одномерный массив(1D) в двумерный(2D)
+//(или наоборот), в соответствии с вариантом.Необходимо оформить в отдельных
+//функциях код следующих действий : 1) инициализация массива; 2) вывод массива; 3)
+//преобразование массива(создание нового массива с другой структурой).Память под
+//массивы выделять динамически и для доступа к элементам использовать указатели.
+//Ввод - вывод данных организовать средствами iostream и iomanip.
+//Полищук Нилищук Алексеевич
+//Вариант 1
+
+
+
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include <iostream>
@@ -79,6 +89,15 @@ void printArray2D(float** arr, int N, int M)
 	}
 }
 
+void freeArray1D(float arr[], int len)
+{
+	delete[] arr;
+}
+
+void freeArray2D(float** arr)
+{
+	delete[] arr;
+}
 
 	int main()
 	{
@@ -97,5 +116,6 @@ void printArray2D(float** arr, int N, int M)
 		float** arr2D = makeArray2D(arr, N, M);
 		multiplicationFirstElement(arr2D, N, M);
 		printArray2D(arr2D, N, M);
-
+		freeArray1D(arr, LEN);
+		freeArray2D(arr2D);
 	}
