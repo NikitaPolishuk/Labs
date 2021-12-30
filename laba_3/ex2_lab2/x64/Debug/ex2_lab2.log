@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (ex3_var1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  ISalaryCalculation.cpp
+  main.cpp
+  Person.cpp
+  Student.cpp
+C:\Users\Nikita\Documents\GitHub\Labs\laba_3\ex2_lab2\Student.cpp(104,9): warning C4101: cnt: неиспользованная локальная переменная
+  Teacher.cpp
+  Создание кода...
+  ex2_lab2.vcxproj -> C:\Users\Nikita\Documents\GitHub\Labs\laba_3\x64\Debug\ex2_lab2.exe
